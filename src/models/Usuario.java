@@ -43,5 +43,14 @@ public class Usuario {
         this.librosPrestados = librosPrestados;
     }
     
+    public void prestarLibro(Libro libro) {
+        librosPrestados.add(libro);
+        libro.setEstado(false);
+    }
+
+    public void devolverLibro(Libro libro) {
+        librosPrestados.remove(libro);
+        libro.setEstado(true);
+    }
     
 }

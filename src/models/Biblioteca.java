@@ -11,10 +11,19 @@ import java.util.List;
 public class Biblioteca {
     private List<Libro> libros;
     private List<Usuario> usuarios;
-    private List<Prestamo> prestamos;
+//    private List<Prestamo> prestamos;
+
+    public Biblioteca(List<Libro> libros, List<Usuario> usuarios) {
+        this.libros = libros;
+        this.usuarios = usuarios;
+    }
     
     public void agregarLibro(Libro libro) {
-    libros.add(libro);
-        System.out.println("Libro agregado a la biblioteca: " + libro.getTitulo());
+        libros.add(libro);
     }
+
+    public void agregarUsuario(Usuario usuario) {
+        usuarios.add(usuario);
+    }
+    
 }

@@ -11,15 +11,15 @@ package models;
 public class Libro {
     private String titulo;
     private String autor;
-    private int anioPublicacion;
+    private String anioPublicacion;
     private boolean estado;
 
-    public Libro(String titulo, String autor, int anioPublicacion, boolean estado) {
-        this.titulo = titulo;
-        this.autor = autor;
-        this.anioPublicacion = anioPublicacion;
-        this.estado = estado;
-    }
+//    public Libro(String titulo, String autor, String anioPublicacion, boolean estado) {
+//        this.titulo = titulo;
+//        this.autor = autor;
+//        this.anioPublicacion = anioPublicacion;
+//        this.estado = true;
+//    }
 
     public String getTitulo() {
         return titulo;
@@ -37,11 +37,11 @@ public class Libro {
         this.autor = autor;
     }
 
-    public int getAnioPublicacion() {
+    public String getAnioPublicacion() {
         return anioPublicacion;
     }
 
-    public void setAnioPublicacion(int anioPublicacion) {
+    public void setAnioPublicacion(String anioPublicacion) {
         this.anioPublicacion = anioPublicacion;
     }
 
